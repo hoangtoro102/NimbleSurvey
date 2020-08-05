@@ -10,6 +10,15 @@
 		032D440A831B4FD4E6A09CE3 /* Pods_NimbleSurveyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5FBF26CB7226E23C844A52 /* Pods_NimbleSurveyTests.framework */; };
 		1AE52D7FDDEF328F21024471 /* Pods_NimbleSurvey_NimbleSurveyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DEDEADD9BA4ADBEC06BF21 /* Pods_NimbleSurvey_NimbleSurveyUITests.framework */; };
 		434800CB01237C9F9772DEC5 /* Pods_NimbleSurvey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59B2320D6AF5E45AFF0F741 /* Pods_NimbleSurvey.framework */; };
+		B75F55A624DA9CA700A8FDF0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55A524DA9CA600A8FDF0 /* MainPresenter.swift */; };
+		B75F55A824DA9CB700A8FDF0 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55A724DA9CB700A8FDF0 /* MainWireframe.swift */; };
+		B75F55AA24DA9D5200A8FDF0 /* spinner.gif in Resources */ = {isa = PBXBuildFile; fileRef = B75F55A924DA9D5100A8FDF0 /* spinner.gif */; };
+		B75F55AC24DA9DED00A8FDF0 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55AB24DA9DED00A8FDF0 /* RootWireframe.swift */; };
+		B75F55AE24DA9EDA00A8FDF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55AD24DA9EDA00A8FDF0 /* MainViewController.swift */; };
+		B75F55B024DA9EEB00A8FDF0 /* MainViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55AF24DA9EEB00A8FDF0 /* MainViewInterface.swift */; };
+		B75F55B224DAA06F00A8FDF0 /* MainModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55B124DAA06F00A8FDF0 /* MainModuleInterface.swift */; };
+		B75F55B424DAA2DB00A8FDF0 /* AuthInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55B324DAA2DB00A8FDF0 /* AuthInteractorIO.swift */; };
+		B75F55B624DAA2E800A8FDF0 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55B524DAA2E800A8FDF0 /* AuthInteractor.swift */; };
 		B7AF406F24D967D20046FCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF406E24D967D20046FCFD /* AppDelegate.swift */; };
 		B7AF407124D967D20046FCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF407024D967D20046FCFD /* SceneDelegate.swift */; };
 		B7AF407624D967D20046FCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AF407424D967D20046FCFD /* Main.storyboard */; };
@@ -46,6 +55,15 @@
 		8B5FBF26CB7226E23C844A52 /* Pods_NimbleSurveyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleSurveyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DEDEADD9BA4ADBEC06BF21 /* Pods_NimbleSurvey_NimbleSurveyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleSurvey_NimbleSurveyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59B2320D6AF5E45AFF0F741 /* Pods_NimbleSurvey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleSurvey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75F55A524DA9CA600A8FDF0 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		B75F55A724DA9CB700A8FDF0 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		B75F55A924DA9D5100A8FDF0 /* spinner.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spinner.gif; sourceTree = "<group>"; };
+		B75F55AB24DA9DED00A8FDF0 /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		B75F55AD24DA9EDA00A8FDF0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B75F55AF24DA9EEB00A8FDF0 /* MainViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInterface.swift; sourceTree = "<group>"; };
+		B75F55B124DAA06F00A8FDF0 /* MainModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleInterface.swift; sourceTree = "<group>"; };
+		B75F55B324DAA2DB00A8FDF0 /* AuthInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractorIO.swift; sourceTree = "<group>"; };
+		B75F55B524DAA2E800A8FDF0 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		B7AF406B24D967D20046FCFD /* NimbleSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimbleSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AF406E24D967D20046FCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7AF407024D967D20046FCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +122,154 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B75F559324DA9C1F00A8FDF0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B75F559424DA9C1F00A8FDF0 /* Module Interface */,
+				B75F559524DA9C1F00A8FDF0 /* Business Logic */,
+				B75F559824DA9C1F00A8FDF0 /* User Interface */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		B75F559424DA9C1F00A8FDF0 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		B75F559524DA9C1F00A8FDF0 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B75F559624DA9C1F00A8FDF0 /* Manager */,
+				B75F559724DA9C1F00A8FDF0 /* Interactor */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		B75F559624DA9C1F00A8FDF0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B75F559724DA9C1F00A8FDF0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B75F559824DA9C1F00A8FDF0 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				B75F559924DA9C1F00A8FDF0 /* Presenter */,
+				B75F559A24DA9C1F00A8FDF0 /* Wireframe */,
+				B75F559B24DA9C1F00A8FDF0 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		B75F559924DA9C1F00A8FDF0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B75F559A24DA9C1F00A8FDF0 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		B75F559B24DA9C1F00A8FDF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B75F559C24DA9C2000A8FDF0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B75F559D24DA9C2000A8FDF0 /* Module Interface */,
+				B75F559E24DA9C2000A8FDF0 /* Business Logic */,
+				B75F55A124DA9C2000A8FDF0 /* User Interface */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B75F559D24DA9C2000A8FDF0 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				B75F55B124DAA06F00A8FDF0 /* MainModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		B75F559E24DA9C2000A8FDF0 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B75F559F24DA9C2000A8FDF0 /* Manager */,
+				B75F55A024DA9C2000A8FDF0 /* Interactor */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		B75F559F24DA9C2000A8FDF0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B75F55A024DA9C2000A8FDF0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B75F55A124DA9C2000A8FDF0 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				B75F55A224DA9C2000A8FDF0 /* Presenter */,
+				B75F55A324DA9C2000A8FDF0 /* Wireframe */,
+				B75F55A424DA9C2000A8FDF0 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		B75F55A224DA9C2000A8FDF0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B75F55A524DA9CA600A8FDF0 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B75F55A324DA9C2000A8FDF0 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				B75F55A724DA9CB700A8FDF0 /* MainWireframe.swift */,
+				B75F55AB24DA9DED00A8FDF0 /* RootWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		B75F55A424DA9C2000A8FDF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B75F55AD24DA9EDA00A8FDF0 /* MainViewController.swift */,
+				B75F55AF24DA9EEB00A8FDF0 /* MainViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B7AF406224D967D20046FCFD = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +303,7 @@
 				B7AF407724D967DA0046FCFD /* Assets.xcassets */,
 				B7AF407924D967DA0046FCFD /* LaunchScreen.storyboard */,
 				B7AF407C24D967DA0046FCFD /* Info.plist */,
+				B75F55A924DA9D5100A8FDF0 /* spinner.gif */,
 			);
 			path = NimbleSurvey;
 			sourceTree = "<group>";
@@ -178,8 +345,10 @@
 		B7AF40A024D969F80046FCFD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B75F559C24DA9C2000A8FDF0 /* Main */,
 				B7AF40A224D96A160046FCFD /* Auth */,
 				B7AF40A124D96A080046FCFD /* Home */,
+				B75F559324DA9C1F00A8FDF0 /* Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -261,6 +430,8 @@
 		B7AF40AA24D96A6C0046FCFD /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				B75F55B324DAA2DB00A8FDF0 /* AuthInteractorIO.swift */,
+				B75F55B524DAA2E800A8FDF0 /* AuthInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -445,6 +616,7 @@
 			files = (
 				B7AF407B24D967DA0046FCFD /* LaunchScreen.storyboard in Resources */,
 				B7AF407824D967DA0046FCFD /* Assets.xcassets in Resources */,
+				B75F55AA24DA9D5200A8FDF0 /* spinner.gif in Resources */,
 				B7AF407624D967D20046FCFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,9 +711,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75F55AE24DA9EDA00A8FDF0 /* MainViewController.swift in Sources */,
+				B75F55A824DA9CB700A8FDF0 /* MainWireframe.swift in Sources */,
 				B7AF40B424D96C520046FCFD /* AppDependencies.swift in Sources */,
+				B75F55B624DAA2E800A8FDF0 /* AuthInteractor.swift in Sources */,
+				B75F55B224DAA06F00A8FDF0 /* MainModuleInterface.swift in Sources */,
+				B75F55B024DA9EEB00A8FDF0 /* MainViewInterface.swift in Sources */,
+				B75F55AC24DA9DED00A8FDF0 /* RootWireframe.swift in Sources */,
+				B75F55B424DAA2DB00A8FDF0 /* AuthInteractorIO.swift in Sources */,
 				B7AF406F24D967D20046FCFD /* AppDelegate.swift in Sources */,
 				B7AF407124D967D20046FCFD /* SceneDelegate.swift in Sources */,
+				B75F55A624DA9CA700A8FDF0 /* MainPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
