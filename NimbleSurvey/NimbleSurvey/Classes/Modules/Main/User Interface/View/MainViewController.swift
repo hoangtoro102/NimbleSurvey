@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
     }
 }
 extension MainViewController: MainViewInterface {
-    func showError() {
+    func showError(error: Error) {
         
     }
 }

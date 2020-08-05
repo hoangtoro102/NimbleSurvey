@@ -1,5 +1,5 @@
 //
-//  MainViewInterface.swift
+//  Configuration.swift
 //  NimbleSurvey
 //
 //  Created by HoangNguyen on 8/5/20.
@@ -7,6 +7,6 @@
 //
 
 import Foundation
-protocol MainViewInterface {
-    func showError(error: Error)
+struct Configuration {
+    static var accessToken: String?
 }

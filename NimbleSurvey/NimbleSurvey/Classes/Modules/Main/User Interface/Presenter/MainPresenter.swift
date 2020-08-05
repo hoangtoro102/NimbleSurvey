@@ -21,7 +21,7 @@ extension MainPresenter: AuthInteractorOutput {
         wireframe?.presentHomeInterface()
     }
     
-    func authFailed() {
-        viewInterface?.showError()
+    func authFailed(error: Error) {
+        viewInterface?.showError(error: error)
     }
 }

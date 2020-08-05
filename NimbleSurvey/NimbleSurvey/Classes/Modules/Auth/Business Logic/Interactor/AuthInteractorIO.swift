@@ -12,5 +12,5 @@ protocol AuthInteractorInput {
 }
 protocol AuthInteractorOutput {
     func authSuccess()
-    func authFailed()
+    func authFailed(error: Error)
 }
