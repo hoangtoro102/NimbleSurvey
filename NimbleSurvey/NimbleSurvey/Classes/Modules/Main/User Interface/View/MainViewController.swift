@@ -9,7 +9,18 @@
 import Foundation
 import UIKit
 class MainViewController: UIViewController {
+    @IBOutlet weak var imgLoading: UIImageView!
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        setupSpinningView()
+    }
     
+    func setupSpinningView() {
+        let advTimeGif = UIImage.gifImageWithName("spinner")
+        self.imgLoading.image = advTimeGif
+    }
 }
 extension MainViewController: MainViewInterface {
     func showError() {

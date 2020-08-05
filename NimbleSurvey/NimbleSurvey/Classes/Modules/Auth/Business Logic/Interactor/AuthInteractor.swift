@@ -11,5 +11,7 @@ class AuthInteractor {
     
 }
 extension AuthInteractor: AuthInteractorInput {
-    
+    func authentication() {
+        
+    }
 }
