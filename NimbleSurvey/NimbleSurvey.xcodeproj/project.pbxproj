@@ -23,6 +23,13 @@
 		B790E1AF24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1AE24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift */; };
 		B790E1B124DBEC450038C7A1 /* AuthInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1B024DBEC450038C7A1 /* AuthInteractorTest.swift */; };
 		B790E1B724DBF8EE0038C7A1 /* ParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1B624DBF8EE0038C7A1 /* ParserTest.swift */; };
+		B790E1B924DBFD320038C7A1 /* HomeInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1B824DBFD320038C7A1 /* HomeInteractorIO.swift */; };
+		B790E1BB24DBFD450038C7A1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1BA24DBFD450038C7A1 /* HomeInteractor.swift */; };
+		B790E1BD24DBFDA20038C7A1 /* PagedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1BC24DBFDA20038C7A1 /* PagedDataManager.swift */; };
+		B790E1BF24DC00BA0038C7A1 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1BE24DC00BA0038C7A1 /* EmptyView.swift */; };
+		B790E1C224DC02930038C7A1 /* SurveyDataManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1C124DC02930038C7A1 /* SurveyDataManagerFactory.swift */; };
+		B790E1C424DC06000038C7A1 /* HomeInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1C324DC06000038C7A1 /* HomeInteractorTest.swift */; };
+		B790E1C624DC061C0038C7A1 /* MockHomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1C524DC061C0038C7A1 /* MockHomeInteractorOutput.swift */; };
 		B7AF406F24D967D20046FCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF406E24D967D20046FCFD /* AppDelegate.swift */; };
 		B7AF407124D967D20046FCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF407024D967D20046FCFD /* SceneDelegate.swift */; };
 		B7AF407624D967D20046FCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AF407424D967D20046FCFD /* Main.storyboard */; };
@@ -86,6 +93,13 @@
 		B790E1AE24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthInteractorOutput.swift; sourceTree = "<group>"; };
 		B790E1B024DBEC450038C7A1 /* AuthInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractorTest.swift; sourceTree = "<group>"; };
 		B790E1B624DBF8EE0038C7A1 /* ParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTest.swift; sourceTree = "<group>"; };
+		B790E1B824DBFD320038C7A1 /* HomeInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorIO.swift; sourceTree = "<group>"; };
+		B790E1BA24DBFD450038C7A1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		B790E1BC24DBFDA20038C7A1 /* PagedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedDataManager.swift; sourceTree = "<group>"; };
+		B790E1BE24DC00BA0038C7A1 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		B790E1C124DC02930038C7A1 /* SurveyDataManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDataManagerFactory.swift; sourceTree = "<group>"; };
+		B790E1C324DC06000038C7A1 /* HomeInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTest.swift; sourceTree = "<group>"; };
+		B790E1C524DC061C0038C7A1 /* MockHomeInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeInteractorOutput.swift; sourceTree = "<group>"; };
 		B7AF406B24D967D20046FCFD /* NimbleSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimbleSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AF406E24D967D20046FCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7AF407024D967D20046FCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -347,8 +361,18 @@
 			isa = PBXGroup;
 			children = (
 				B790E1B624DBF8EE0038C7A1 /* ParserTest.swift */,
+				B790E1C324DC06000038C7A1 /* HomeInteractorTest.swift */,
+				B790E1C524DC061C0038C7A1 /* MockHomeInteractorOutput.swift */,
 			);
 			path = FetchData;
+			sourceTree = "<group>";
+		};
+		B790E1C024DC02790038C7A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B790E1C124DC02930038C7A1 /* SurveyDataManagerFactory.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		B7AF406224D967D20046FCFD = {
@@ -421,6 +445,7 @@
 		B7AF409F24D969F10046FCFD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B790E1C024DC02790038C7A1 /* Services */,
 				B7DCD13E24DAC7A000BB56EE /* Configuration */,
 				B7DCD13324DAC76900BB56EE /* Operations */,
 				B75F55C724DAC52400A8FDF0 /* Models */,
@@ -536,6 +561,7 @@
 		B7AF40AC24D96A7E0046FCFD /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				B790E1BC24DBFDA20038C7A1 /* PagedDataManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -543,6 +569,8 @@
 		B7AF40AD24D96A7E0046FCFD /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				B790E1B824DBFD320038C7A1 /* HomeInteractorIO.swift */,
+				B790E1BA24DBFD450038C7A1 /* HomeInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -574,6 +602,7 @@
 		B7AF40B124D96A7E0046FCFD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B790E1BE24DC00BA0038C7A1 /* EmptyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -839,14 +868,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75F55AE24DA9EDA00A8FDF0 /* MainViewController.swift in Sources */,
+				B790E1B924DBFD320038C7A1 /* HomeInteractorIO.swift in Sources */,
 				B7DCD14624DAD8BC00BB56EE /* AuthManager.swift in Sources */,
 				B7DCD14A24DAE9A900BB56EE /* NSError+Extensions.swift in Sources */,
 				B75F55B924DAC20E00A8FDF0 /* iOSDevCenters+GIF.swift in Sources */,
 				B75F55A824DA9CB700A8FDF0 /* MainWireframe.swift in Sources */,
 				B7AF40B424D96C520046FCFD /* AppDependencies.swift in Sources */,
+				B790E1BB24DBFD450038C7A1 /* HomeInteractor.swift in Sources */,
 				B75F55B624DAA2E800A8FDF0 /* AuthInteractor.swift in Sources */,
 				B75F55B224DAA06F00A8FDF0 /* MainModuleInterface.swift in Sources */,
 				B7DCD13C24DAC76A00BB56EE /* GetCollectionSurveysRequest.swift in Sources */,
+				B790E1BD24DBFDA20038C7A1 /* PagedDataManager.swift in Sources */,
+				B790E1BF24DC00BA0038C7A1 /* EmptyView.swift in Sources */,
 				B75F55B024DA9EEB00A8FDF0 /* MainViewInterface.swift in Sources */,
 				B7DCD14224DAD0C400BB56EE /* AuthenRequest.swift in Sources */,
 				B75F55AC24DA9DED00A8FDF0 /* RootWireframe.swift in Sources */,
@@ -861,6 +894,7 @@
 				B7DCD14424DAD4EB00BB56EE /* AuthResponse.swift in Sources */,
 				B7DCD14C24DB1ACA00BB56EE /* Survey.swift in Sources */,
 				B7DCD13D24DAC76A00BB56EE /* NetworkRequest.swift in Sources */,
+				B790E1C224DC02930038C7A1 /* SurveyDataManagerFactory.swift in Sources */,
 				B7DCD14924DAE9A900BB56EE /* OperationQueue+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -871,7 +905,9 @@
 			files = (
 				B790E1B124DBEC450038C7A1 /* AuthInteractorTest.swift in Sources */,
 				B7DCD14F24DB1DAE00BB56EE /* ResourceLoader.swift in Sources */,
+				B790E1C624DC061C0038C7A1 /* MockHomeInteractorOutput.swift in Sources */,
 				B790E1B724DBF8EE0038C7A1 /* ParserTest.swift in Sources */,
+				B790E1C424DC06000038C7A1 /* HomeInteractorTest.swift in Sources */,
 				B7AF408624D967DA0046FCFD /* NimbleSurveyTests.swift in Sources */,
 				B790E1AF24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift in Sources */,
 			);
