@@ -18,6 +18,12 @@ struct Survey: Codable {
         case description
         case coverImageUrl = "cover_image_url"
     }
+    
+    public init(title: String, des: String, url: String) {
+        self.title = title
+        self.description = des
+        self.coverImageUrl = url
+    }
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

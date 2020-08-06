@@ -22,6 +22,7 @@
 		B75F55B924DAC20E00A8FDF0 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55B824DAC20E00A8FDF0 /* iOSDevCenters+GIF.swift */; };
 		B790E1AF24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1AE24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift */; };
 		B790E1B124DBEC450038C7A1 /* AuthInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1B024DBEC450038C7A1 /* AuthInteractorTest.swift */; };
+		B790E1B724DBF8EE0038C7A1 /* ParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1B624DBF8EE0038C7A1 /* ParserTest.swift */; };
 		B7AF406F24D967D20046FCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF406E24D967D20046FCFD /* AppDelegate.swift */; };
 		B7AF407124D967D20046FCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF407024D967D20046FCFD /* SceneDelegate.swift */; };
 		B7AF407624D967D20046FCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AF407424D967D20046FCFD /* Main.storyboard */; };
@@ -84,6 +85,7 @@
 		B75F55B824DAC20E00A8FDF0 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
 		B790E1AE24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthInteractorOutput.swift; sourceTree = "<group>"; };
 		B790E1B024DBEC450038C7A1 /* AuthInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractorTest.swift; sourceTree = "<group>"; };
+		B790E1B624DBF8EE0038C7A1 /* ParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTest.swift; sourceTree = "<group>"; };
 		B7AF406B24D967D20046FCFD /* NimbleSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimbleSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AF406E24D967D20046FCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7AF407024D967D20046FCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -344,6 +346,7 @@
 		B790E1AD24DBE7790038C7A1 /* FetchData */ = {
 			isa = PBXGroup;
 			children = (
+				B790E1B624DBF8EE0038C7A1 /* ParserTest.swift */,
 			);
 			path = FetchData;
 			sourceTree = "<group>";
@@ -868,6 +871,7 @@
 			files = (
 				B790E1B124DBEC450038C7A1 /* AuthInteractorTest.swift in Sources */,
 				B7DCD14F24DB1DAE00BB56EE /* ResourceLoader.swift in Sources */,
+				B790E1B724DBF8EE0038C7A1 /* ParserTest.swift in Sources */,
 				B7AF408624D967DA0046FCFD /* NimbleSurveyTests.swift in Sources */,
 				B790E1AF24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift in Sources */,
 			);
