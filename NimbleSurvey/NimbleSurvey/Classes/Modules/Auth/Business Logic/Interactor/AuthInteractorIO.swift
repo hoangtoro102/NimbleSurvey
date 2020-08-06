@@ -11,6 +11,6 @@ protocol AuthInteractorInput {
     func authentication()
 }
 protocol AuthInteractorOutput {
-    func authSuccess()
+    func authSuccess(_ accessToken: String)
     func authFailed(error: Error)
 }

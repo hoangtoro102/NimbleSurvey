@@ -17,7 +17,8 @@ class MainPresenter {
     }
 }
 extension MainPresenter: AuthInteractorOutput {
-    func authSuccess() {
+    func authSuccess(_ accessToken: String) {
+        Configuration.accessToken = accessToken
         wireframe?.presentHomeInterface()
     }
     

@@ -19,8 +19,7 @@ extension AuthInteractor: AuthInteractorInput {
 }
 extension AuthInteractor: AuthManagerDelegate {
     func didReceiveAccessToken(_ accessToken: String) {
-        Configuration.accessToken = accessToken
-        output?.authSuccess()
+        output?.authSuccess(accessToken)
     }
     
     func authenticationFailed(error: Error) {

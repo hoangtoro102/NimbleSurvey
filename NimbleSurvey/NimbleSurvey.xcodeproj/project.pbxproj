@@ -20,6 +20,8 @@
 		B75F55B424DAA2DB00A8FDF0 /* AuthInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55B324DAA2DB00A8FDF0 /* AuthInteractorIO.swift */; };
 		B75F55B624DAA2E800A8FDF0 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55B524DAA2E800A8FDF0 /* AuthInteractor.swift */; };
 		B75F55B924DAC20E00A8FDF0 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55B824DAC20E00A8FDF0 /* iOSDevCenters+GIF.swift */; };
+		B790E1AF24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1AE24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift */; };
+		B790E1B124DBEC450038C7A1 /* AuthInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1B024DBEC450038C7A1 /* AuthInteractorTest.swift */; };
 		B7AF406F24D967D20046FCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF406E24D967D20046FCFD /* AppDelegate.swift */; };
 		B7AF407124D967D20046FCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF407024D967D20046FCFD /* SceneDelegate.swift */; };
 		B7AF407624D967D20046FCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AF407424D967D20046FCFD /* Main.storyboard */; };
@@ -28,6 +30,20 @@
 		B7AF408624D967DA0046FCFD /* NimbleSurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF408524D967DA0046FCFD /* NimbleSurveyTests.swift */; };
 		B7AF409124D967DA0046FCFD /* NimbleSurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF409024D967DA0046FCFD /* NimbleSurveyUITests.swift */; };
 		B7AF40B424D96C520046FCFD /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF40B324D96C520046FCFD /* AppDependencies.swift */; };
+		B7DCD13924DAC76A00BB56EE /* SurveyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD13424DAC76900BB56EE /* SurveyRequest.swift */; };
+		B7DCD13A24DAC76A00BB56EE /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD13524DAC76900BB56EE /* ConcurrentOperation.swift */; };
+		B7DCD13B24DAC76A00BB56EE /* SurveyPagedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD13624DAC76900BB56EE /* SurveyPagedRequest.swift */; };
+		B7DCD13C24DAC76A00BB56EE /* GetCollectionSurveysRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD13724DAC76900BB56EE /* GetCollectionSurveysRequest.swift */; };
+		B7DCD13D24DAC76A00BB56EE /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD13824DAC76900BB56EE /* NetworkRequest.swift */; };
+		B7DCD14024DAC7B400BB56EE /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD13F24DAC7B400BB56EE /* Configuration.swift */; };
+		B7DCD14224DAD0C400BB56EE /* AuthenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD14124DAD0C400BB56EE /* AuthenRequest.swift */; };
+		B7DCD14424DAD4EB00BB56EE /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD14324DAD4EB00BB56EE /* AuthResponse.swift */; };
+		B7DCD14624DAD8BC00BB56EE /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD14524DAD8BC00BB56EE /* AuthManager.swift */; };
+		B7DCD14924DAE9A900BB56EE /* OperationQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD14724DAE9A900BB56EE /* OperationQueue+Extensions.swift */; };
+		B7DCD14A24DAE9A900BB56EE /* NSError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD14824DAE9A900BB56EE /* NSError+Extensions.swift */; };
+		B7DCD14C24DB1ACA00BB56EE /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD14B24DB1ACA00BB56EE /* Survey.swift */; };
+		B7DCD14F24DB1DAE00BB56EE /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD14E24DB1DAE00BB56EE /* ResourceLoader.swift */; };
+		B7DCD15224DB1E1100BB56EE /* fetchResource.json in Resources */ = {isa = PBXBuildFile; fileRef = B7DCD15124DB1E0A00BB56EE /* fetchResource.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +82,8 @@
 		B75F55B324DAA2DB00A8FDF0 /* AuthInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractorIO.swift; sourceTree = "<group>"; };
 		B75F55B524DAA2E800A8FDF0 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		B75F55B824DAC20E00A8FDF0 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		B790E1AE24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthInteractorOutput.swift; sourceTree = "<group>"; };
+		B790E1B024DBEC450038C7A1 /* AuthInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractorTest.swift; sourceTree = "<group>"; };
 		B7AF406B24D967D20046FCFD /* NimbleSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimbleSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AF406E24D967D20046FCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7AF407024D967D20046FCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +98,20 @@
 		B7AF409024D967DA0046FCFD /* NimbleSurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleSurveyUITests.swift; sourceTree = "<group>"; };
 		B7AF409224D967DA0046FCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7AF40B324D96C520046FCFD /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		B7DCD13424DAC76900BB56EE /* SurveyRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyRequest.swift; sourceTree = "<group>"; };
+		B7DCD13524DAC76900BB56EE /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperation.swift; sourceTree = "<group>"; };
+		B7DCD13624DAC76900BB56EE /* SurveyPagedRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyPagedRequest.swift; sourceTree = "<group>"; };
+		B7DCD13724DAC76900BB56EE /* GetCollectionSurveysRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCollectionSurveysRequest.swift; sourceTree = "<group>"; };
+		B7DCD13824DAC76900BB56EE /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		B7DCD13F24DAC7B400BB56EE /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		B7DCD14124DAD0C400BB56EE /* AuthenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenRequest.swift; sourceTree = "<group>"; };
+		B7DCD14324DAD4EB00BB56EE /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		B7DCD14524DAD8BC00BB56EE /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		B7DCD14724DAE9A900BB56EE /* OperationQueue+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OperationQueue+Extensions.swift"; sourceTree = "<group>"; };
+		B7DCD14824DAE9A900BB56EE /* NSError+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Extensions.swift"; sourceTree = "<group>"; };
+		B7DCD14B24DB1ACA00BB56EE /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		B7DCD14E24DB1DAE00BB56EE /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		B7DCD15124DB1E0A00BB56EE /* fetchResource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fetchResource.json; sourceTree = "<group>"; };
 		C42A6030994933FC42684555 /* Pods-NimbleSurvey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NimbleSurvey.release.xcconfig"; path = "Target Support Files/Pods-NimbleSurvey/Pods-NimbleSurvey.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,9 +307,45 @@
 		B75F55B724DAC1EE00A8FDF0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B7DCD14824DAE9A900BB56EE /* NSError+Extensions.swift */,
+				B7DCD14724DAE9A900BB56EE /* OperationQueue+Extensions.swift */,
 				B75F55B824DAC20E00A8FDF0 /* iOSDevCenters+GIF.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B75F55C724DAC52400A8FDF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCD14324DAD4EB00BB56EE /* AuthResponse.swift */,
+				B7DCD14B24DB1ACA00BB56EE /* Survey.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B790E1AB24DBE7510038C7A1 /* NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				B790E1AD24DBE7790038C7A1 /* FetchData */,
+				B790E1AC24DBE7730038C7A1 /* Auth */,
+			);
+			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
+		B790E1AC24DBE7730038C7A1 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B790E1AE24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift */,
+				B790E1B024DBEC450038C7A1 /* AuthInteractorTest.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		B790E1AD24DBE7790038C7A1 /* FetchData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FetchData;
 			sourceTree = "<group>";
 		};
 		B7AF406224D967D20046FCFD = {
@@ -321,6 +389,8 @@
 		B7AF408424D967DA0046FCFD /* NimbleSurveyTests */ = {
 			isa = PBXGroup;
 			children = (
+				B790E1AB24DBE7510038C7A1 /* NetworkingTests */,
+				B7DCD14D24DB1D6000BB56EE /* Resource */,
 				B7AF408524D967DA0046FCFD /* NimbleSurveyTests.swift */,
 				B7AF408724D967DA0046FCFD /* Info.plist */,
 			);
@@ -348,6 +418,9 @@
 		B7AF409F24D969F10046FCFD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B7DCD13E24DAC7A000BB56EE /* Configuration */,
+				B7DCD13324DAC76900BB56EE /* Operations */,
+				B75F55C724DAC52400A8FDF0 /* Models */,
 				B75F55B724DAC1EE00A8FDF0 /* Utils */,
 			);
 			path = Common;
@@ -434,6 +507,7 @@
 		B7AF40A924D96A6C0046FCFD /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				B7DCD14524DAD8BC00BB56EE /* AuthManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -506,6 +580,44 @@
 			children = (
 			);
 			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		B7DCD13324DAC76900BB56EE /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCD13424DAC76900BB56EE /* SurveyRequest.swift */,
+				B7DCD13524DAC76900BB56EE /* ConcurrentOperation.swift */,
+				B7DCD13624DAC76900BB56EE /* SurveyPagedRequest.swift */,
+				B7DCD13724DAC76900BB56EE /* GetCollectionSurveysRequest.swift */,
+				B7DCD13824DAC76900BB56EE /* NetworkRequest.swift */,
+				B7DCD14124DAD0C400BB56EE /* AuthenRequest.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		B7DCD13E24DAC7A000BB56EE /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCD13F24DAC7B400BB56EE /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B7DCD14D24DB1D6000BB56EE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCD15024DB1DE800BB56EE /* JSON */,
+				B7DCD14E24DB1DAE00BB56EE /* ResourceLoader.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B7DCD15024DB1DE800BB56EE /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCD15124DB1E0A00BB56EE /* fetchResource.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		EC130C2C77A3F2B2472BF2ED /* Frameworks */ = {
@@ -636,6 +748,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DCD15224DB1E1100BB56EE /* fetchResource.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,17 +836,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75F55AE24DA9EDA00A8FDF0 /* MainViewController.swift in Sources */,
+				B7DCD14624DAD8BC00BB56EE /* AuthManager.swift in Sources */,
+				B7DCD14A24DAE9A900BB56EE /* NSError+Extensions.swift in Sources */,
 				B75F55B924DAC20E00A8FDF0 /* iOSDevCenters+GIF.swift in Sources */,
 				B75F55A824DA9CB700A8FDF0 /* MainWireframe.swift in Sources */,
 				B7AF40B424D96C520046FCFD /* AppDependencies.swift in Sources */,
 				B75F55B624DAA2E800A8FDF0 /* AuthInteractor.swift in Sources */,
 				B75F55B224DAA06F00A8FDF0 /* MainModuleInterface.swift in Sources */,
+				B7DCD13C24DAC76A00BB56EE /* GetCollectionSurveysRequest.swift in Sources */,
 				B75F55B024DA9EEB00A8FDF0 /* MainViewInterface.swift in Sources */,
+				B7DCD14224DAD0C400BB56EE /* AuthenRequest.swift in Sources */,
 				B75F55AC24DA9DED00A8FDF0 /* RootWireframe.swift in Sources */,
 				B75F55B424DAA2DB00A8FDF0 /* AuthInteractorIO.swift in Sources */,
 				B7AF406F24D967D20046FCFD /* AppDelegate.swift in Sources */,
+				B7DCD13A24DAC76A00BB56EE /* ConcurrentOperation.swift in Sources */,
+				B7DCD14024DAC7B400BB56EE /* Configuration.swift in Sources */,
 				B7AF407124D967D20046FCFD /* SceneDelegate.swift in Sources */,
+				B7DCD13924DAC76A00BB56EE /* SurveyRequest.swift in Sources */,
+				B7DCD13B24DAC76A00BB56EE /* SurveyPagedRequest.swift in Sources */,
 				B75F55A624DA9CA700A8FDF0 /* MainPresenter.swift in Sources */,
+				B7DCD14424DAD4EB00BB56EE /* AuthResponse.swift in Sources */,
+				B7DCD14C24DB1ACA00BB56EE /* Survey.swift in Sources */,
+				B7DCD13D24DAC76A00BB56EE /* NetworkRequest.swift in Sources */,
+				B7DCD14924DAE9A900BB56EE /* OperationQueue+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,7 +866,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B790E1B124DBEC450038C7A1 /* AuthInteractorTest.swift in Sources */,
+				B7DCD14F24DB1DAE00BB56EE /* ResourceLoader.swift in Sources */,
 				B7AF408624D967DA0046FCFD /* NimbleSurveyTests.swift in Sources */,
+				B790E1AF24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
