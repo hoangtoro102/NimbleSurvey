@@ -21,6 +21,6 @@ class HomeWireframe {
     }
     
     func presentDetailInterface(_ survey: Survey) {
-        
+        detailWireframe?.presentDetailInterface(survey: survey)
     }
 }

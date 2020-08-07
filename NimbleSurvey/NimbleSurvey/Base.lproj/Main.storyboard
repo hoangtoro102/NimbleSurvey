@@ -147,6 +147,46 @@
             </objects>
             <point key="canvasLocation" x="337.68115942028987" y="-64.285714285714278"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="vz7-5K-V0f">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="2Y0-oC-1jy" customClass="DetailViewController" customModule="NimbleSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVm-XK-rsc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ph-YF-zl2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">htmlStr	String	"&lt;div&gt;&lt;span style=\"font-size:14px\"&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif\"&gt;Dear {name},&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=\"font-size:14px\"&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif\"&gt;Thank you for visiting Westside Lounge at&amp;nbsp;Dubai&lt;/span&gt;&lt;/span&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif; font-size:14px\"&gt; International Hotel&amp;nbsp;&lt;/span&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif; font-size:14px\"&gt;and for taking the time to complete our brief survey. We are constantly striving to improve and your feedback allows us to make the experience even better for you on your next visit. Each survey is read individually by senior staff and discussed with the team in daily meetings.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=\"font-size:14px\"&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif\"&gt;We would appreciate it if you could please spend a few moments to review us on TripAdvisor. By &lt;a href=\"https://www.tripadvisor.com/Restaurant_Review-g295424-d11765915-Revie"...	</mutableString>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="message" size="11"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3ph-YF-zl2" firstAttribute="trailing" secondItem="k4x-Kt-CI8" secondAttribute="trailing" id="2d7-3x-grp"/>
+                            <constraint firstItem="3ph-YF-zl2" firstAttribute="leading" secondItem="k4x-Kt-CI8" secondAttribute="leading" id="6Rq-1D-522"/>
+                            <constraint firstAttribute="bottom" secondItem="3ph-YF-zl2" secondAttribute="bottom" id="TjP-eU-S0Y"/>
+                            <constraint firstItem="3ph-YF-zl2" firstAttribute="top" secondItem="k4x-Kt-CI8" secondAttribute="top" id="pOh-sP-QYA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k4x-Kt-CI8"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbEmail" destination="3ph-YF-zl2" id="i5Z-jy-sAh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYP-bz-zf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023.1884057971015" y="-64.285714285714278"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>

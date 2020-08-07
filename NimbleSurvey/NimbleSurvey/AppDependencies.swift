@@ -47,12 +47,17 @@ class AppDependencies {
         homeInteractor.output = homePresenter
         
         homePresenter.interactor = homeInteractor
+        homePresenter.wireframe = homeWireframe
         
         homeWireframe.rootWireframe = rootWireframe
         homeWireframe.presenter = homePresenter
         mainWireframe.homeWireframe = homeWireframe
         
         // MARK: Detail Module
+        let detailWireframe = DetailWireframe()
+        
+        detailWireframe.rootWireframe = rootWireframe
+        homeWireframe.detailWireframe = detailWireframe
     }
 }
 

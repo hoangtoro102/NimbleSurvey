@@ -8,5 +8,11 @@
 
 import Foundation
 class DetailWireframe {
+    var rootWireframe: RootWireframe?
     
+    func presentDetailInterface(survey: Survey) {
+        let viewController = rootWireframe?.viewControllerFromStoryboardWithIdentifier(String(describing: DetailViewController.self)) as! DetailViewController
+        viewController.survey = survey
+        rootWireframe?.pushViewController(viewController)
+    }
 }
