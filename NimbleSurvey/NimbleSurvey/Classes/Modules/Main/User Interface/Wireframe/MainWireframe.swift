@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 class MainWireframe: NSObject {
     var rootWireframe: RootWireframe?
-//    var homeWireframe: HomeWireframe?
+    var homeWireframe: HomeWireframe?
     var presenter: MainPresenter?
     var mainViewController: MainViewController?
     
@@ -21,6 +21,6 @@ class MainWireframe: NSObject {
     }
     
     func presentHomeInterface() {
-        
+        homeWireframe?.presentHomeInterface()
     }
 }

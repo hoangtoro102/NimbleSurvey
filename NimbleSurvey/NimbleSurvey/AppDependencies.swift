@@ -34,9 +34,23 @@ class AppDependencies {
         
         // MARK: Auth Module
         let authInteractor = AuthInteractor()
+        
+        authInteractor.output = mainPresenter
+        
         mainPresenter.authInteractor = authInteractor
         
         // MARK: Home Module
+        let homeWireframe = HomeWireframe()
+        let homePresenter = HomePresenter()
+        let homeInteractor = HomeInteractor()
+        
+        homeInteractor.output = homePresenter
+        
+        homePresenter.interactor = homeInteractor
+        
+        homeWireframe.rootWireframe = rootWireframe
+        homeWireframe.presenter = homePresenter
+        mainWireframe.homeWireframe = homeWireframe
         
         // MARK: Detail Module
     }

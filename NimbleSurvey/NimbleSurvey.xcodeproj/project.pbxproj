@@ -3,13 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		032D440A831B4FD4E6A09CE3 /* Pods_NimbleSurveyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5FBF26CB7226E23C844A52 /* Pods_NimbleSurveyTests.framework */; };
 		1AE52D7FDDEF328F21024471 /* Pods_NimbleSurvey_NimbleSurveyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DEDEADD9BA4ADBEC06BF21 /* Pods_NimbleSurvey_NimbleSurveyUITests.framework */; };
 		434800CB01237C9F9772DEC5 /* Pods_NimbleSurvey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59B2320D6AF5E45AFF0F741 /* Pods_NimbleSurvey.framework */; };
+		B75B131424DD2EA5001280B5 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75B131324DD2EA5001280B5 /* PagingView.swift */; };
+		B75B131624DD367E001280B5 /* DetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75B131524DD367E001280B5 /* DetailWireframe.swift */; };
+		B75B131C24DD3D69001280B5 /* AnnularLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75B131924DD3D68001280B5 /* AnnularLayer.swift */; };
+		B75B131D24DD3D69001280B5 /* LineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75B131A24DD3D68001280B5 /* LineLayer.swift */; };
+		B75B131E24DD3D69001280B5 /* StepIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75B131B24DD3D68001280B5 /* StepIndicatorView.swift */; };
+		B75B132024DD4A87001280B5 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75B131F24DD4A87001280B5 /* ImageDownloader.swift */; };
+		B75B132224DD4AB9001280B5 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75B132124DD4AB9001280B5 /* ImageCache.swift */; };
 		B75F55A624DA9CA700A8FDF0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55A524DA9CA600A8FDF0 /* MainPresenter.swift */; };
 		B75F55A824DA9CB700A8FDF0 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F55A724DA9CB700A8FDF0 /* MainWireframe.swift */; };
 		B75F55AA24DA9D5200A8FDF0 /* spinner.gif in Resources */ = {isa = PBXBuildFile; fileRef = B75F55A924DA9D5100A8FDF0 /* spinner.gif */; };
@@ -30,6 +37,14 @@
 		B790E1C224DC02930038C7A1 /* SurveyDataManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1C124DC02930038C7A1 /* SurveyDataManagerFactory.swift */; };
 		B790E1C424DC06000038C7A1 /* HomeInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1C324DC06000038C7A1 /* HomeInteractorTest.swift */; };
 		B790E1C624DC061C0038C7A1 /* MockHomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1C524DC061C0038C7A1 /* MockHomeInteractorOutput.swift */; };
+		B790E1C824DC0DF10038C7A1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1C724DC0DF10038C7A1 /* HomePresenter.swift */; };
+		B790E1CA24DC0DFD0038C7A1 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1C924DC0DFD0038C7A1 /* HomeWireframe.swift */; };
+		B790E1CC24DC0E0A0038C7A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1CB24DC0E0A0038C7A1 /* HomeViewController.swift */; };
+		B790E1CE24DC0E150038C7A1 /* HomeViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1CD24DC0E150038C7A1 /* HomeViewInterface.swift */; };
+		B790E1D024DC0E280038C7A1 /* HomeModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1CF24DC0E280038C7A1 /* HomeModuleInterface.swift */; };
+		B790E1D224DC207B0038C7A1 /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1D124DC207B0038C7A1 /* HomeViewController+CollectionView.swift */; };
+		B790E1D524DC212E0038C7A1 /* SurveyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790E1D424DC212E0038C7A1 /* SurveyCell.swift */; };
+		B790E1D724DC21400038C7A1 /* SurveyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B790E1D624DC21400038C7A1 /* SurveyCell.xib */; };
 		B7AF406F24D967D20046FCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF406E24D967D20046FCFD /* AppDelegate.swift */; };
 		B7AF407124D967D20046FCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF407024D967D20046FCFD /* SceneDelegate.swift */; };
 		B7AF407624D967D20046FCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AF407424D967D20046FCFD /* Main.storyboard */; };
@@ -80,6 +95,13 @@
 		8B5FBF26CB7226E23C844A52 /* Pods_NimbleSurveyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleSurveyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DEDEADD9BA4ADBEC06BF21 /* Pods_NimbleSurvey_NimbleSurveyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleSurvey_NimbleSurveyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A59B2320D6AF5E45AFF0F741 /* Pods_NimbleSurvey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleSurvey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75B131324DD2EA5001280B5 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		B75B131524DD367E001280B5 /* DetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireframe.swift; sourceTree = "<group>"; };
+		B75B131924DD3D68001280B5 /* AnnularLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnularLayer.swift; sourceTree = "<group>"; };
+		B75B131A24DD3D68001280B5 /* LineLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLayer.swift; sourceTree = "<group>"; };
+		B75B131B24DD3D68001280B5 /* StepIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepIndicatorView.swift; sourceTree = "<group>"; };
+		B75B131F24DD4A87001280B5 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		B75B132124DD4AB9001280B5 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		B75F55A524DA9CA600A8FDF0 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		B75F55A724DA9CB700A8FDF0 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 		B75F55A924DA9D5100A8FDF0 /* spinner.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spinner.gif; sourceTree = "<group>"; };
@@ -100,6 +122,14 @@
 		B790E1C124DC02930038C7A1 /* SurveyDataManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDataManagerFactory.swift; sourceTree = "<group>"; };
 		B790E1C324DC06000038C7A1 /* HomeInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTest.swift; sourceTree = "<group>"; };
 		B790E1C524DC061C0038C7A1 /* MockHomeInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeInteractorOutput.swift; sourceTree = "<group>"; };
+		B790E1C724DC0DF10038C7A1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		B790E1C924DC0DFD0038C7A1 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		B790E1CB24DC0E0A0038C7A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B790E1CD24DC0E150038C7A1 /* HomeViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInterface.swift; sourceTree = "<group>"; };
+		B790E1CF24DC0E280038C7A1 /* HomeModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleInterface.swift; sourceTree = "<group>"; };
+		B790E1D124DC207B0038C7A1 /* HomeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		B790E1D424DC212E0038C7A1 /* SurveyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCell.swift; sourceTree = "<group>"; };
+		B790E1D624DC21400038C7A1 /* SurveyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyCell.xib; sourceTree = "<group>"; };
 		B7AF406B24D967D20046FCFD /* NimbleSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimbleSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AF406E24D967D20046FCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7AF407024D967D20046FCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +202,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B75B131724DD3D14001280B5 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				B75B131824DD3D68001280B5 /* StepIndicator */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		B75B131824DD3D68001280B5 /* StepIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				B75B131924DD3D68001280B5 /* AnnularLayer.swift */,
+				B75B131A24DD3D68001280B5 /* LineLayer.swift */,
+				B75B131B24DD3D68001280B5 /* StepIndicatorView.swift */,
+			);
+			path = StepIndicator;
+			sourceTree = "<group>";
+		};
 		B75F559324DA9C1F00A8FDF0 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +280,7 @@
 		B75F559A24DA9C1F00A8FDF0 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				B75B131524DD367E001280B5 /* DetailWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -371,8 +420,20 @@
 			isa = PBXGroup;
 			children = (
 				B790E1C124DC02930038C7A1 /* SurveyDataManagerFactory.swift */,
+				B75B131F24DD4A87001280B5 /* ImageDownloader.swift */,
+				B75B132124DD4AB9001280B5 /* ImageCache.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B790E1D324DC20C50038C7A1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B790E1D424DC212E0038C7A1 /* SurveyCell.swift */,
+				B790E1D624DC21400038C7A1 /* SurveyCell.xib */,
+				B75B131324DD2EA5001280B5 /* PagingView.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		B7AF406224D967D20046FCFD = {
@@ -445,6 +506,7 @@
 		B7AF409F24D969F10046FCFD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B75B131724DD3D14001280B5 /* External */,
 				B790E1C024DC02790038C7A1 /* Services */,
 				B7DCD13E24DAC7A000BB56EE /* Configuration */,
 				B7DCD13324DAC76900BB56EE /* Operations */,
@@ -588,6 +650,7 @@
 		B7AF40AF24D96A7E0046FCFD /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				B790E1C724DC0DF10038C7A1 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -595,6 +658,7 @@
 		B7AF40B024D96A7E0046FCFD /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				B790E1C924DC0DFD0038C7A1 /* HomeWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -602,7 +666,11 @@
 		B7AF40B124D96A7E0046FCFD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B790E1D324DC20C50038C7A1 /* Cell */,
 				B790E1BE24DC00BA0038C7A1 /* EmptyView.swift */,
+				B790E1CB24DC0E0A0038C7A1 /* HomeViewController.swift */,
+				B790E1CD24DC0E150038C7A1 /* HomeViewInterface.swift */,
+				B790E1D124DC207B0038C7A1 /* HomeViewController+CollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -610,6 +678,7 @@
 		B7AF40B224D96A7E0046FCFD /* Module Interface */ = {
 			isa = PBXGroup;
 			children = (
+				B790E1CF24DC0E280038C7A1 /* HomeModuleInterface.swift */,
 			);
 			path = "Module Interface";
 			sourceTree = "<group>";
@@ -673,6 +742,7 @@
 				B7AF406724D967D20046FCFD /* Sources */,
 				B7AF406824D967D20046FCFD /* Frameworks */,
 				B7AF406924D967D20046FCFD /* Resources */,
+				93A382A9C865AA67588ECF69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -710,6 +780,7 @@
 				B7AF408824D967DA0046FCFD /* Sources */,
 				B7AF408924D967DA0046FCFD /* Frameworks */,
 				B7AF408A24D967DA0046FCFD /* Resources */,
+				13ECB60828D2C084DBDD223C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -773,6 +844,7 @@
 				B7AF407824D967DA0046FCFD /* Assets.xcassets in Resources */,
 				B75F55AA24DA9D5200A8FDF0 /* spinner.gif in Resources */,
 				B7AF407624D967D20046FCFD /* Main.storyboard in Resources */,
+				B790E1D724DC21400038C7A1 /* SurveyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,6 +886,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13ECB60828D2C084DBDD223C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NimbleSurvey-NimbleSurveyUITests/Pods-NimbleSurvey-NimbleSurveyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NimbleSurvey-NimbleSurveyUITests/Pods-NimbleSurvey-NimbleSurveyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NimbleSurvey-NimbleSurveyUITests/Pods-NimbleSurvey-NimbleSurveyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A382A9C865AA67588ECF69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NimbleSurvey/Pods-NimbleSurvey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NimbleSurvey/Pods-NimbleSurvey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NimbleSurvey/Pods-NimbleSurvey-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9E70DE27546C915D4119366E /* [CP] Check Pods Manifest.lock */ = {
@@ -867,23 +973,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75B131C24DD3D69001280B5 /* AnnularLayer.swift in Sources */,
 				B75F55AE24DA9EDA00A8FDF0 /* MainViewController.swift in Sources */,
 				B790E1B924DBFD320038C7A1 /* HomeInteractorIO.swift in Sources */,
 				B7DCD14624DAD8BC00BB56EE /* AuthManager.swift in Sources */,
+				B790E1C824DC0DF10038C7A1 /* HomePresenter.swift in Sources */,
 				B7DCD14A24DAE9A900BB56EE /* NSError+Extensions.swift in Sources */,
 				B75F55B924DAC20E00A8FDF0 /* iOSDevCenters+GIF.swift in Sources */,
 				B75F55A824DA9CB700A8FDF0 /* MainWireframe.swift in Sources */,
 				B7AF40B424D96C520046FCFD /* AppDependencies.swift in Sources */,
 				B790E1BB24DBFD450038C7A1 /* HomeInteractor.swift in Sources */,
+				B790E1D524DC212E0038C7A1 /* SurveyCell.swift in Sources */,
 				B75F55B624DAA2E800A8FDF0 /* AuthInteractor.swift in Sources */,
 				B75F55B224DAA06F00A8FDF0 /* MainModuleInterface.swift in Sources */,
 				B7DCD13C24DAC76A00BB56EE /* GetCollectionSurveysRequest.swift in Sources */,
 				B790E1BD24DBFDA20038C7A1 /* PagedDataManager.swift in Sources */,
+				B75B131D24DD3D69001280B5 /* LineLayer.swift in Sources */,
+				B75B132024DD4A87001280B5 /* ImageDownloader.swift in Sources */,
 				B790E1BF24DC00BA0038C7A1 /* EmptyView.swift in Sources */,
+				B790E1D224DC207B0038C7A1 /* HomeViewController+CollectionView.swift in Sources */,
+				B75B131E24DD3D69001280B5 /* StepIndicatorView.swift in Sources */,
 				B75F55B024DA9EEB00A8FDF0 /* MainViewInterface.swift in Sources */,
 				B7DCD14224DAD0C400BB56EE /* AuthenRequest.swift in Sources */,
 				B75F55AC24DA9DED00A8FDF0 /* RootWireframe.swift in Sources */,
 				B75F55B424DAA2DB00A8FDF0 /* AuthInteractorIO.swift in Sources */,
+				B790E1CA24DC0DFD0038C7A1 /* HomeWireframe.swift in Sources */,
+				B75B131624DD367E001280B5 /* DetailWireframe.swift in Sources */,
 				B7AF406F24D967D20046FCFD /* AppDelegate.swift in Sources */,
 				B7DCD13A24DAC76A00BB56EE /* ConcurrentOperation.swift in Sources */,
 				B7DCD14024DAC7B400BB56EE /* Configuration.swift in Sources */,
@@ -891,11 +1006,16 @@
 				B7DCD13924DAC76A00BB56EE /* SurveyRequest.swift in Sources */,
 				B7DCD13B24DAC76A00BB56EE /* SurveyPagedRequest.swift in Sources */,
 				B75F55A624DA9CA700A8FDF0 /* MainPresenter.swift in Sources */,
+				B790E1D024DC0E280038C7A1 /* HomeModuleInterface.swift in Sources */,
 				B7DCD14424DAD4EB00BB56EE /* AuthResponse.swift in Sources */,
+				B790E1CC24DC0E0A0038C7A1 /* HomeViewController.swift in Sources */,
+				B790E1CE24DC0E150038C7A1 /* HomeViewInterface.swift in Sources */,
 				B7DCD14C24DB1ACA00BB56EE /* Survey.swift in Sources */,
+				B75B131424DD2EA5001280B5 /* PagingView.swift in Sources */,
 				B7DCD13D24DAC76A00BB56EE /* NetworkRequest.swift in Sources */,
 				B790E1C224DC02930038C7A1 /* SurveyDataManagerFactory.swift in Sources */,
 				B7DCD14924DAE9A900BB56EE /* OperationQueue+Extensions.swift in Sources */,
+				B75B132224DD4AB9001280B5 /* ImageCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

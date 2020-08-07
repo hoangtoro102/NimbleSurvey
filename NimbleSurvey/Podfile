@@ -6,6 +6,7 @@ target 'NimbleSurvey' do
   use_frameworks!
 
   # Pods for NimbleSurvey
+  pod 'UPCarouselFlowLayout'
 
   target 'NimbleSurveyTests' do
     inherit! :search_paths

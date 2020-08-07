@@ -41,7 +41,7 @@ class PagedDataManager {
     private var cursor: SurveyPagedRequest.Cursor
     private(set) var isFetching = false
     private var canFetchMore = true
-    private lazy var operationQueue = OperationQueue(with: "com.unsplash.pagedDataManager")
+    private lazy var operationQueue = OperationQueue(with: "com.pagedDataManager")
 
     weak var delegate: PagedDataManagerDelegate?
 

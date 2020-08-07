@@ -19,7 +19,9 @@ class MainPresenter {
 extension MainPresenter: AuthInteractorOutput {
     func authSuccess(_ accessToken: String) {
         Configuration.accessToken = accessToken
-        wireframe?.presentHomeInterface()
+        DispatchQueue.main.async {
+            self.wireframe?.presentHomeInterface()
+        }
     }
     
     func authFailed(error: Error) {
