@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="dT0-Mc-zgD" kind="relationship" relationship="rootViewController" id="P7j-VH-fJp"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B43-1M-bWO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +55,7 @@
             </objects>
             <point key="canvasLocation" x="-430" y="-64"/>
         </scene>
-        <!--Home View Controller-->
+        <!--SURVEYS-->
         <scene sceneID="yjD-5r-BQ8">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="dT0-Mc-zgD" customClass="HomeViewController" customModule="NimbleSurvey" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,43 +63,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHN-QD-rjd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="48"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEB-0D-aUu">
-                                        <rect key="frame" x="24" y="13" width="18" height="22"/>
-                                        <state key="normal" image="arrow.clockwise" catalog="system"/>
-                                        <connections>
-                                            <action selector="touchedBtnRefresh:" destination="dT0-Mc-zgD" eventType="touchUpInside" id="V9x-Tv-PuU"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SURVEYS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdu-sc-Czk">
-                                        <rect key="frame" x="142.5" y="7" width="129" height="34"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xao-Vi-fwe">
-                                        <rect key="frame" x="369" y="8" width="21" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="hKG-KU-D7j"/>
-                                        </constraints>
-                                        <state key="normal" image="line.horizontal.3" catalog="system"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="AEB-0D-aUu" firstAttribute="leading" secondItem="WHN-QD-rjd" secondAttribute="leading" constant="24" id="3Xx-W2-qyE"/>
-                                    <constraint firstItem="qdu-sc-Czk" firstAttribute="centerX" secondItem="WHN-QD-rjd" secondAttribute="centerX" id="8gx-Mv-nXl"/>
-                                    <constraint firstItem="Xao-Vi-fwe" firstAttribute="centerY" secondItem="WHN-QD-rjd" secondAttribute="centerY" id="PdX-5x-jfH"/>
-                                    <constraint firstItem="AEB-0D-aUu" firstAttribute="centerY" secondItem="WHN-QD-rjd" secondAttribute="centerY" id="TbH-KZ-zu4"/>
-                                    <constraint firstAttribute="trailing" secondItem="Xao-Vi-fwe" secondAttribute="trailing" constant="24" id="xF2-1p-cUq"/>
-                                    <constraint firstAttribute="height" constant="48" id="xXu-F6-KQH"/>
-                                    <constraint firstItem="qdu-sc-Czk" firstAttribute="centerY" secondItem="WHN-QD-rjd" secondAttribute="centerY" id="xdy-ZI-dFj"/>
-                                </constraints>
-                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Q3c-Lc-LZY">
-                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="laM-6H-bRl">
                                     <size key="itemSize" width="128" height="128"/>
@@ -116,7 +84,7 @@
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVq-U3-Ame">
-                                <rect key="frame" x="374" y="100" width="32" height="754"/>
+                                <rect key="frame" x="374" y="104" width="32" height="750"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="sSv-qU-ACm"/>
@@ -125,20 +93,30 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="WHN-QD-rjd" firstAttribute="top" secondItem="ta6-fR-l6O" secondAttribute="top" id="FkZ-C8-mZC"/>
-                            <constraint firstItem="ta6-fR-l6O" firstAttribute="bottom" secondItem="Q3c-Lc-LZY" secondAttribute="bottom" id="GYT-9y-N7j"/>
                             <constraint firstItem="ta6-fR-l6O" firstAttribute="trailing" secondItem="VVq-U3-Ame" secondAttribute="trailing" constant="8" id="HN4-Z6-cOD"/>
                             <constraint firstItem="ta6-fR-l6O" firstAttribute="bottom" secondItem="VVq-U3-Ame" secondAttribute="bottom" constant="8" id="Wmd-1v-mMo"/>
-                            <constraint firstItem="WHN-QD-rjd" firstAttribute="leading" secondItem="ta6-fR-l6O" secondAttribute="leading" id="gZo-db-zsL"/>
-                            <constraint firstItem="VVq-U3-Ame" firstAttribute="top" secondItem="WHN-QD-rjd" secondAttribute="bottom" constant="8" id="mzK-gN-vyW"/>
+                            <constraint firstAttribute="bottom" secondItem="Q3c-Lc-LZY" secondAttribute="bottom" id="dod-un-r5R"/>
                             <constraint firstItem="Q3c-Lc-LZY" firstAttribute="leading" secondItem="ta6-fR-l6O" secondAttribute="leading" id="pNi-Jp-ipq"/>
-                            <constraint firstItem="Q3c-Lc-LZY" firstAttribute="top" secondItem="WHN-QD-rjd" secondAttribute="bottom" id="pht-ox-f4t"/>
                             <constraint firstItem="ta6-fR-l6O" firstAttribute="trailing" secondItem="Q3c-Lc-LZY" secondAttribute="trailing" id="psh-Qd-rMP"/>
-                            <constraint firstItem="ta6-fR-l6O" firstAttribute="trailing" secondItem="WHN-QD-rjd" secondAttribute="trailing" id="y0b-k0-ToM"/>
+                            <constraint firstItem="VVq-U3-Ame" firstAttribute="top" secondItem="ta6-fR-l6O" secondAttribute="top" constant="16" id="son-KI-iMO"/>
+                            <constraint firstItem="Q3c-Lc-LZY" firstAttribute="top" secondItem="ta6-fR-l6O" secondAttribute="top" id="wlc-pd-cBw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ta6-fR-l6O"/>
                     </view>
+                    <navigationItem key="navigationItem" title="SURVEYS" id="t1i-Ee-auF">
+                        <barButtonItem key="leftBarButtonItem" image="arrow.clockwise" catalog="system" id="2Vd-gR-CeV">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="touchedBtnRefresh:" destination="dT0-Mc-zgD" id="qFj-uB-1T9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="line.horizontal.3" catalog="system" id="wrw-Qb-1HC">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="btnMenu" destination="wrw-Qb-1HC" id="zTe-eN-WTN"/>
+                        <outlet property="btnRefresh" destination="2Vd-gR-CeV" id="f3p-Hv-Yyv"/>
                         <outlet property="collectionView" destination="Q3c-Lc-LZY" id="sWM-iG-ACp"/>
                         <outlet property="stepIndicatorContainerView" destination="VVq-U3-Ame" id="rsg-8D-hvV"/>
                     </connections>
@@ -159,7 +137,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">htmlStr	String	"&lt;div&gt;&lt;span style=\"font-size:14px\"&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif\"&gt;Dear {name},&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=\"font-size:14px\"&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif\"&gt;Thank you for visiting Westside Lounge at&amp;nbsp;Dubai&lt;/span&gt;&lt;/span&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif; font-size:14px\"&gt; International Hotel&amp;nbsp;&lt;/span&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif; font-size:14px\"&gt;and for taking the time to complete our brief survey. We are constantly striving to improve and your feedback allows us to make the experience even better for you on your next visit. Each survey is read individually by senior staff and discussed with the team in daily meetings.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=\"font-size:14px\"&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif\"&gt;We would appreciate it if you could please spend a few moments to review us on TripAdvisor. By &lt;a href=\"https://www.tripadvisor.com/Restaurant_Review-g295424-d11765915-Revie"...	</mutableString>
+                                        <string key="content">htmlStr	String	"&lt;div&gt;&lt;span style=\"font-size:14px\"&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif\"&gt;Dear {name},&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=\"font-size:14px\"&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif\"&gt;Thank you for visiting Westside Lounge at&amp;nbsp;Dubai&lt;/span&gt;&lt;/span&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif; font-size:14px\"&gt; International Hotel&amp;nbsp;&lt;/span&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif; font-size:14px\"&gt;and for taking the time to complete our brief survey. We are constantly striving to improve and your feedback allows us to make the experience even better for you on your next visit. Each survey is read individually by senior staff and discussed with the team in daily meetings.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=\"font-size:14px\"&gt;&lt;span style=\"font-family:arial,helvetica,sans-serif\"&gt;We would appreciate it if you could please spend a few moments to review us on TripAdvisor. By &lt;a href=\"https://www.tripadvisor.com/Restaurant_Review-g295424-d11765915-Revie"...	</string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" metaFont="message" size="11"/>

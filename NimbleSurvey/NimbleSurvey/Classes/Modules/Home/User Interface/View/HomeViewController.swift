@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     var eventHandler: HomeModuleInterface?
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var stepIndicatorContainerView: UIView!
+    @IBOutlet weak var btnRefresh: UIBarButtonItem!
+    @IBOutlet weak var btnMenu: UIBarButtonItem!
     
     var stepIndicatorView: StepIndicatorView!
     
@@ -48,7 +50,12 @@ class HomeViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.isNavigationBarHidden = false
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.barTintColor = UIColor(red: 19/255.0, green: 26/255.0, blue: 52/255.0, alpha: 1.0)
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+
         if surveys.count == 0 {
             refresh()
         }
@@ -63,7 +70,6 @@ class HomeViewController: UIViewController {
     }
 
     // MARK: - Setup
-
     private func setupSpinner() {
         spinner = {
                if #available(iOS 13.0, *) {
@@ -203,7 +209,9 @@ extension HomeViewController: HomeViewInterface {
     }
     
     func showNoResults() {
-        showEmptyView(with: .noResults)
+        DispatchQueue.main.async {
+            self.showEmptyView(with: .noResults)
+        }
     }
     
     func updateWithResult(_ newSurveys: [Survey]) {
@@ -235,6 +243,8 @@ extension HomeViewController: HomeViewInterface {
     
     func showErrorState(_ state: EmptyViewState) {
         isFetching = false
-        showEmptyView(with: state)
+        DispatchQueue.main.async {
+            self.showEmptyView(with: state)
+        }
     }
 }
