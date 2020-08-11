@@ -30,10 +30,10 @@ struct Survey: Codable {
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        title = try container.decode(String.self, forKey: .title)
-        description = try container.decode(String.self, forKey: .description)
-        coverImageUrl = try container.decode(String.self, forKey: .coverImageUrl)
-        thankEmail = try container.decode(String.self, forKey: .thankEmail)
+        title = try? container.decode(String.self, forKey: .title)
+        description = try? container.decode(String.self, forKey: .description)
+        coverImageUrl = try? container.decode(String.self, forKey: .coverImageUrl)
+        thankEmail = try? container.decode(String.self, forKey: .thankEmail)
     }
 
     public func encode(to encoder: Encoder) throws {

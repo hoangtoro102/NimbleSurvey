@@ -155,6 +155,7 @@ class HomeViewController: UIViewController {
     // MARK: - Actions
     @IBAction func touchedBtnRefresh(_ sender: Any) {
         self.surveys = []
+        hideEmptyView()
         resetDataSource()
     }
 
