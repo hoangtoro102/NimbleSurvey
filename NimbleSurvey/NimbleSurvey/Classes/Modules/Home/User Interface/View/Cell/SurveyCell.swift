@@ -33,6 +33,10 @@ class SurveyCell: UICollectionViewCell {
         btnTakeSurvey.layer.borderWidth = 0.1
         btnTakeSurvey.layer.borderColor = UIColor.clear.cgColor
         btnTakeSurvey.clipsToBounds = true
+        
+        let shadowColor = UIColor(white: 0, alpha: 0.8)
+        lbTitle.dropShadow(color: shadowColor)
+        lbDes.dropShadow(color: shadowColor)
     }
     
     override func prepareForReuse() {
