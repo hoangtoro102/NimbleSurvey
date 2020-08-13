@@ -52,7 +52,6 @@
 		B7AF407624D967D20046FCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AF407424D967D20046FCFD /* Main.storyboard */; };
 		B7AF407824D967DA0046FCFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AF407724D967DA0046FCFD /* Assets.xcassets */; };
 		B7AF407B24D967DA0046FCFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AF407924D967DA0046FCFD /* LaunchScreen.storyboard */; };
-		B7AF408624D967DA0046FCFD /* NimbleSurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF408524D967DA0046FCFD /* NimbleSurveyTests.swift */; };
 		B7AF409124D967DA0046FCFD /* NimbleSurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF409024D967DA0046FCFD /* NimbleSurveyUITests.swift */; };
 		B7AF40B424D96C520046FCFD /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF40B324D96C520046FCFD /* AppDependencies.swift */; };
 		B7DCD13924DAC76A00BB56EE /* SurveyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCD13424DAC76900BB56EE /* SurveyRequest.swift */; };
@@ -142,7 +141,6 @@
 		B7AF407A24D967DA0046FCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7AF407C24D967DA0046FCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7AF408124D967DA0046FCFD /* NimbleSurveyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbleSurveyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7AF408524D967DA0046FCFD /* NimbleSurveyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleSurveyTests.swift; sourceTree = "<group>"; };
 		B7AF408724D967DA0046FCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7AF408C24D967DA0046FCFD /* NimbleSurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbleSurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AF409024D967DA0046FCFD /* NimbleSurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleSurveyUITests.swift; sourceTree = "<group>"; };
@@ -485,7 +483,6 @@
 			children = (
 				B790E1AB24DBE7510038C7A1 /* NetworkingTests */,
 				B7DCD14D24DB1D6000BB56EE /* Resource */,
-				B7AF408524D967DA0046FCFD /* NimbleSurveyTests.swift */,
 				B7AF408724D967DA0046FCFD /* Info.plist */,
 			);
 			path = NimbleSurveyTests;
@@ -1036,7 +1033,6 @@
 				B790E1C624DC061C0038C7A1 /* MockHomeInteractorOutput.swift in Sources */,
 				B790E1B724DBF8EE0038C7A1 /* ParserTest.swift in Sources */,
 				B790E1C424DC06000038C7A1 /* HomeInteractorTest.swift in Sources */,
-				B7AF408624D967DA0046FCFD /* NimbleSurveyTests.swift in Sources */,
 				B790E1AF24DBEA6C0038C7A1 /* MockAuthInteractorOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
