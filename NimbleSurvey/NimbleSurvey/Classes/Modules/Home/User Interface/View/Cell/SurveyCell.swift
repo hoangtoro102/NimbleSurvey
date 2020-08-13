@@ -24,6 +24,7 @@ class SurveyCell: UICollectionViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
+        btnTakeSurvey.accessibilityIdentifier = "btnTakeSurvey"
         setupLayout()
         bindData()
     }

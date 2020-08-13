@@ -15,29 +15,90 @@ class NimbleSurveyUITests: XCTestCase {
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
+        XCUIApplication().launch()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    
+    func testAuthenticationExistance() {
         let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let imageView = app.images.firstMatch
+        XCTAssert(imageView.exists)
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
-            }
-        }
+    
+    func testNavigationBarExistance() {
+        let app = XCUIApplication()
+        let navigationBar = app.navigationBars.firstMatch
+        
+        XCTAssertFalse(navigationBar.exists)
+        
+        let exists = NSPredicate(format: "exists == true")
+        expectation(for: exists, evaluatedWith: navigationBar, handler: nil)
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssert(navigationBar.exists)
+        XCTAssertTrue(navigationBar.staticTexts["SURVEYS"].exists)
+        XCTAssertTrue(navigationBar.buttons["btnRefresh"].exists)
+    }
+    
+    func testCollectionViewExistance() {
+        let app = XCUIApplication()
+        let collectionView = app.collectionViews.firstMatch
+        
+        XCTAssertFalse(collectionView.exists)
+        
+        let exists = NSPredicate(format: "exists == true")
+        expectation(for: exists, evaluatedWith: collectionView, handler: nil)
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssert(collectionView.exists)
+    }
+    
+    func testRefreshInteractions() {
+        let app = XCUIApplication()
+        let collectionView = app.collectionViews.firstMatch
+        let navigationBar = app.navigationBars.firstMatch
+        
+        let btnTakeSurvey = collectionView.cells.element(boundBy: 0).buttons["btnTakeSurvey"]
+        XCTAssertFalse(btnTakeSurvey.exists)
+        let exists = NSPredicate(format: "exists == true")
+        expectation(for: exists, evaluatedWith: btnTakeSurvey, handler: nil)
+        waitForExpectations(timeout: 20, handler: nil)
+        
+        let spinner = app.activityIndicators.element(boundBy: 0)
+        XCTAssertFalse(spinner.exists)
+        let btnRefresh = navigationBar.buttons["btnRefresh"]
+        btnRefresh.tap()
+        XCTAssertFalse(collectionView.cells.element(boundBy: 0).buttons["btnTakeSurvey"].exists)
+        XCTAssertTrue(spinner.exists)
+    }
+    
+    func testTakeSurveyInteractions() {
+        let app = XCUIApplication()
+        let collectionView = app.collectionViews.firstMatch
+        let btnTakeSurvey = collectionView.cells.element(boundBy: 0).buttons["btnTakeSurvey"]
+        
+        XCTAssertFalse(btnTakeSurvey.exists)
+        
+        let exists = NSPredicate(format: "exists == true")
+        expectation(for: exists, evaluatedWith: btnTakeSurvey, handler: nil)
+        waitForExpectations(timeout: 20, handler: nil)
+        
+        XCTAssertTrue(btnTakeSurvey.exists)
+        
+        let lbEmail = app.staticTexts.element(matching: .any, identifier: "lbEmail")
+        XCTAssertFalse(lbEmail.exists)
+        btnTakeSurvey.tap()
+        expectation(for: exists, evaluatedWith: lbEmail, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        XCTAssert(lbEmail.exists)
+        XCTAssertFalse(collectionView.exists)
+        
+        let navigationBar = app.navigationBars.firstMatch
+        let backButton = navigationBar.buttons["SURVEYS"]
+        XCTAssertTrue(backButton.exists)
+        backButton.tap()
+        XCTAssertTrue(collectionView.exists)
     }
 }

@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupAccessibilityIdentifiers()
         setupCollectionView()
         setupSpinner()
     }
@@ -70,6 +70,11 @@ class HomeViewController: UIViewController {
     }
 
     // MARK: - Setup
+    private func setupAccessibilityIdentifiers() {
+        btnRefresh.accessibilityIdentifier = "btnRefresh"
+        emptyView.accessibilityIdentifier = "emptyView"
+    }
+    
     private func setupSpinner() {
         spinner = {
                if #available(iOS 13.0, *) {
